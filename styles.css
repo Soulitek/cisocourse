@@ -206,20 +206,34 @@ li {
 
 .metadata {
     position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
     left: 3rem;
     right: 3rem;
     display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
     border-top: 2px solid var(--border-color);
     font-size: 0.9rem;
     color: var(--light-text);
 }
 
+.metadata p {
+    margin: 0;
+}
+
+.presenters {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0.5rem 0 !important;
+}
+
 .status {
     font-weight: 600;
     color: var(--warning-color);
+    margin-top: 0.5rem !important;
 }
 
 /* ========================================
