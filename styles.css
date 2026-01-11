@@ -73,7 +73,7 @@ body {
     height: 100%;
     background: var(--primary-color);
     transition: width 0.3s ease;
-    width: 10%; /* 1/10 slides */
+    width: 9.09%; /* 1/11 slides */
 }
 
 .slide-counter {
@@ -276,6 +276,19 @@ table tbody tr:last-child td {
 
 .access-matrix td {
     text-align: center;
+}
+
+.asset-mapping-table {
+    font-size: 0.9rem;
+}
+
+.asset-mapping-table td:first-child {
+    font-weight: 600;
+    width: 30%;
+}
+
+.asset-mapping-table td:last-child {
+    width: 70%;
 }
 
 /* ========================================
