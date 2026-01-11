@@ -8,29 +8,25 @@ Create a modern, professional HTML+CSS slide deck based on the Network Architect
 **UPDATE:** Transformed into human-readable story format and published to GitHub Pages.
 
 ## Deliverables
-- ✅ `index.html` - Complete HTML structure with 16 slides
+- ✅ `index.html` - Complete HTML structure with 11 slides (human-readable story format)
 - ✅ `styles.css` - Professional styling with 16:9 aspect ratio, print support
 - ✅ `deck.js` - Navigation controller with keyboard, hash routing, progress indicator
+- ✅ `image.png` - Network architecture diagram
 
 ## Implementation Summary
 
-### Slides Created (16 total)
-1. **Title Slide** - Document metadata and presentation title
-2. **Purpose & Scope** - In-scope and out-of-scope items
-3. **Business Requirements** - Availability, Performance, Scalability, Compliance
-4. **Technical Requirements** - Bandwidth, Latency, Security, Remote Access, Monitoring, Automation
-5. **Design Principles** - High Availability, Security by Design, Least Privilege, Scalability, Simplicity
-6. **Target Architecture Summary** - Threat landscape mitigation overview
-7. **Network Zones** - DMZ, Internal, Management, User, Research, Other zones
-8. **Topology Diagram** - SVG diagram showing all zones, firewalls, and connections
-9. **Security Controls** - Endpoint protection, network security, physical security
-10. **Access Control Model** - User auth, admin access, device authentication, access matrix
-11. **Encryption & TLS Inspection** - In-transit and at-rest encryption, TLS inspection approach
-12. **High Availability & Resiliency** - HA design for all components including DR
-13. **Monitoring & Logging** - Tools, metrics, retention (90 days hot / 1 year archive)
-14. **Risks & Mitigations** - 5 key risks with severity and mitigation strategies
-15. **Open Questions & Next Steps** - Open items and implementation roadmap
-16. **Summary** - Architecture highlights and closing statement
+### Slides Created (11 total) - Story-Driven Format
+1. **Title Slide** - "Securing Our Research Future" with author: Amos
+2. **The Challenge We Face** - Story intro about protecting research and threats
+3. **What Success Looks Like** - Benefits for community and behind-the-scenes
+4. **Our Security Philosophy** - Design principles and master plan
+5. **The Neighborhoods** - Network zones described as city districts
+6. **The Map of Our Digital City** - Actual network architecture diagram (image.png)
+7. **What We're Protecting** - Asset mapping with organization details
+8. **How We Keep You Safe** - Security controls in human terms
+9. **Always On, Always Ready** - High availability and resiliency
+10. **Watching & Learning** - Monitoring and logging explained
+11. **The Path Forward** - Risks, challenges, next steps, and summary
 
 ### Key Features Implemented
 - ✅ **Modern Design**: Clean spacing, professional typography, strong hierarchy
