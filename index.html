@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Architecture HLD - Academic Customer</title>
+    <title>Securing Our Research Future - Network Architecture Story</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,183 +19,203 @@
         <!-- Slide 1: Title -->
         <section class="slide active" id="slide-1">
             <div class="slide-content">
-                <h1>High-Level Design (HLD)</h1>
-                <h2>Network Architecture</h2>
+                <h1>Securing Our Research Future</h1>
+                <h2>A Story About Protecting Innovation</h2>
                 <div class="subtitle">
-                    <p><strong>Campus + R&D Segmented Network</strong></p>
-                    <p>ZTNA/SASE + Secure Web Gateways + OOB Management + DR</p>
+                    <p><strong>Building a Safe Digital Campus</strong></p>
+                    <p>Where researchers can focus on breakthroughs, not break-ins</p>
                 </div>
                 <div class="metadata">
                     <p>Version: v1.0</p>
-                    <p>Author: Amos</p>
-                    <p>Date: 2026-01-04</p>
-                    <p class="status">Status: Draft</p>
+                    <p>Presented by: Amos</p>
+                    <p>Date: January 4, 2026</p>
+                    <p class="status">Status: Draft for Discussion</p>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 2: Purpose & Scope -->
+        <!-- Slide 2: The Challenge We Face -->
         <section class="slide" id="slide-2">
             <div class="slide-content">
-                <h1>Purpose & Scope</h1>
+                <h1>The Challenge We Face</h1>
+                <div class="story-intro">
+                    <p class="highlight">Imagine you're protecting groundbreaking research that could change the world. But every day, there are people trying to steal it.</p>
+                </div>
                 <div class="two-column">
                     <div class="column">
-                        <h2>Purpose</h2>
-                        <p class="highlight">This High-Level Design (HLD) defines the secure network architecture for an academic research institution engaged in advanced, government-funded and defense-related research.</p>
+                        <h2>What We're Protecting</h2>
                         <ul>
-                            <li>Protection of Research Data and Intellectual Property (IP)</li>
-                            <li>Controlled collaboration with academic and technical partners in Israel and USA</li>
-                            <li>Addresses supply-chain risk, insider threat, AI-driven zero-day exposure, and ransomware</li>
+                            <li>🔬 <strong>Cutting-edge research</strong> funded by government and defense programs</li>
+                            <li>💡 <strong>Intellectual property</strong> that took years to develop</li>
+                            <li>🤝 <strong>Collaboration</strong> with trusted partners in Israel and USA</li>
+                            <li>🎓 <strong>Student and faculty work</strong> that represents countless hours of dedication</li>
                         </ul>
                     </div>
                     <div class="column">
-                        <h2>In Scope</h2>
+                        <h2>The Threats We Face</h2>
                         <ul>
-                            <li>ZTNA/SASE user access for Staff/Students/IT and Research users</li>
-                            <li>Segmentation into Users, Research, Internal Services, OOB Management, Physical Security, Backup, and DR zones</li>
-                        </ul>
-                        <h2>Out of Scope</h2>
-                        <ul>
-                            <li>Secure Web Gateway for Internet egress control and inspection</li>
-                            <li>Supplier connectivity via Suppliers FW with explicit allowlists</li>
+                            <li>🕵️ <strong>Nation-state actors</strong> trying to steal research secrets</li>
+                            <li>😠 <strong>Insider threats</strong> from disgruntled employees or compromised accounts</li>
+                            <li>🤖 <strong>AI-powered attacks</strong> that learn and adapt faster than ever</li>
+                            <li>🔒 <strong>Ransomware groups</strong> targeting universities worldwide</li>
                         </ul>
                     </div>
+                </div>
+                <div class="story-box">
+                    <p><strong>Our Mission:</strong> Create a digital fortress that keeps the bad guys out while letting our researchers work freely and collaborate safely.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 3: Business & Technical Requirements -->
+        <!-- Slide 3: What Success Looks Like -->
         <section class="slide" id="slide-3">
             <div class="slide-content">
-                <h1>Business & Technical Requirements</h1>
+                <h1>What Success Looks Like</h1>
                 <div class="two-column">
                     <div class="column">
-                        <h2>Business Requirements</h2>
-                        <table class="requirements-table">
-                            <tr>
-                                <td><strong>Availability</strong></td>
-                                <td>99.9% for user-facing services; 99.99% for security/control-plane</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Performance</strong></td>
-                                <td>Low-latency access for internal apps; predictable web access via SWG</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Scalability</strong></td>
-                                <td>Support growth in users and R&D workloads; add zones/services without redesign</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Compliance</strong></td>
-                                <td>Align with ISO 27001 style controls; data handling by geography</td>
-                            </tr>
-                        </table>
+                        <h2>For Our Community</h2>
+                        <div class="benefit-card">
+                            <h3>⏰ Always Available</h3>
+                            <p>Services work 99.9% of the time—just like flipping a light switch</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>⚡ Lightning Fast</h3>
+                            <p>No lag, no waiting. Work feels instant, whether you're on campus or at home</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>📈 Room to Grow</h3>
+                            <p>Whether we're 500 or 5,000 users, the system scales seamlessly</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>✅ Regulation Ready</h3>
+                            <p>Meeting international standards without extra hassle</p>
+                        </div>
                     </div>
                     <div class="column">
-                        <h2>Technical Requirements</h2>
-                        <table class="requirements-table">
-                            <tr>
-                                <td><strong>Bandwidth</strong></td>
-                                <td>Sufficient for web breakout and R&D data transfers; DR replication capacity</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Latency</strong></td>
-                                <td>&lt;50ms intra-site; ZTNA access optimized; minimize inspection on latency-sensitive flows</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Security</strong></td>
-                                <td>North-south and east-west firewalls; SWG; OOB management; SIEM logging</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Remote Access</strong></td>
-                                <td>ZTNA/SASE with role-based policy; MFA via IdP; no direct inbound access</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Automation</strong></td>
-                                <td>Config-as-code for FW/SWG policies; standardized templates</td>
-                            </tr>
-                        </table>
+                        <h2>Behind the Scenes</h2>
+                        <div class="benefit-card">
+                            <h3>🛡️ Security First</h3>
+                            <p>Every connection is verified, every access is logged, every threat is monitored</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>🔐 Smart Access</h3>
+                            <p>The right people get access to the right things—nothing more, nothing less</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>🔄 Automatic Backup</h3>
+                            <p>Even if disaster strikes, we can recover everything and keep working</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h3>🤖 Self-Managing</h3>
+                            <p>Systems that configure themselves and alert us before problems occur</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 4: Design Principles & Architecture Summary -->
+        <!-- Slide 4: Our Security Philosophy -->
         <section class="slide" id="slide-4">
             <div class="slide-content">
-                <h1>Design Principles & Architecture</h1>
+                <h1>Our Security Philosophy</h1>
+                <p class="intro-text">Think of our network like a modern city with multiple layers of protection:</p>
                 <div class="two-column">
                     <div class="column">
-                        <h2>Design Principles</h2>
-                        <ul>
-                            <li><strong>High Availability:</strong> Redundant components, HA pairs for firewalls, dual ISP connectivity</li>
-                            <li><strong>Security by Design:</strong> Zero Trust access model, defense-in-depth, segmentation</li>
-                            <li><strong>Least Privilege:</strong> Role-based access control, explicit allowlists</li>
-                            <li><strong>Scalability:</strong> Modular zone design for easy expansion</li>
-                            <li><strong>Simplicity:</strong> Clear zone boundaries, standardized policies</li>
-                        </ul>
+                        <h2>The Five Pillars</h2>
+                        <div class="pillar-card">
+                            <h3>🏰 Always Ready</h3>
+                            <p>Like having backup power generators—if one system fails, another takes over instantly</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3>🛡️ Defense in Depth</h3>
+                            <p>Multiple layers of security, like a castle with walls, moats, and guards</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3>🚪 Minimal Access</h3>
+                            <p>You only get the keys to the rooms you actually need to enter</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3>📐 Built to Scale</h3>
+                            <p>Like modular building blocks—add more as we grow without starting over</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3>✨ Keep It Simple</h3>
+                            <p>Clear rules, standard procedures, less confusion for everyone</p>
+                        </div>
                     </div>
                     <div class="column">
-                        <h2>Architecture Summary</h2>
+                        <h2>The Master Plan</h2>
                         <div class="summary-box">
-                            <p>Segmented, firewall-enforced zones with identity-driven access (ZTNA/SASE) for users. All north-south traffic is inspected/controlled at the edge (External FWs + Secure Web Gateways). Administrative access is isolated via an OOB zone with jump servers and SIEM. Research workloads are separated from general users with dedicated Research firewalls and a DR environment.</p>
+                            <p>We're creating <strong>separate neighborhoods</strong> in our digital city:</p>
+                            <ul>
+                                <li>👥 <strong>The Campus</strong> where students and staff work</li>
+                                <li>🔬 <strong>The Lab District</strong> where sensitive research happens</li>
+                                <li>🏛️ <strong>The Control Center</strong> where IT manages everything</li>
+                                <li>🚪 <strong>The Gateway</strong> that connects us to the Internet</li>
+                                <li>🤝 <strong>The Collaboration Zones</strong> for working with partners</li>
+                            </ul>
+                            <p><strong>Every connection between neighborhoods is guarded</strong> and monitored 24/7.</p>
                         </div>
-                        <h3>Threat Landscape Mitigation</h3>
+                        <h3>How We Stop the Bad Guys</h3>
                         <ul>
-                            <li><strong>Supply-chain:</strong> Strict segmentation and allow-listed access</li>
-                            <li><strong>Insider risk:</strong> Zero Trust access, least-privilege policies, full session logging</li>
-                            <li><strong>AI/zero-day:</strong> Isolated research environments, controlled Internet access</li>
-                            <li><strong>Ransomware:</strong> East-west segmentation, resilient backup networks</li>
+                            <li>🕵️‍♂️ <strong>Supplier infiltration:</strong> Strict vetting and isolated connections</li>
+                            <li>😡 <strong>Insider threats:</strong> Every action is logged; unusual behavior triggers alerts</li>
+                            <li>🤖 <strong>AI attacks:</strong> Research systems isolated from the public Internet</li>
+                            <li>🦠 <strong>Ransomware:</strong> Isolated backups they can't touch, instant detection</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 5: Network Zones -->
+        <!-- Slide 5: The Neighborhoods of Our Digital City -->
         <section class="slide" id="slide-5">
             <div class="slide-content">
-                <h1>Network Zones</h1>
+                <h1>The Neighborhoods of Our Digital City</h1>
                 <table class="zones-table">
                     <thead>
                         <tr>
-                            <th>Zone</th>
-                            <th>Purpose</th>
+                            <th>Neighborhood</th>
+                            <th>What Happens Here</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>DMZ</strong></td>
-                            <td>Controlled north-south edge: External FW (Users/R&D), Secure Web Gateways, Internet egress/ingress, Repos exposure as required</td>
+                            <td>🚪 <strong>The Gateway (DMZ)</strong></td>
+                            <td>The main entrance where all Internet traffic is inspected—like airport security for data</td>
                         </tr>
                         <tr>
-                            <td><strong>Internal</strong></td>
-                            <td>Core data networks: Domain Servers, Internal Web Servers, R&D Web Servers, App Servers, AI Servers</td>
+                            <td>🏢 <strong>The Campus</strong></td>
+                            <td>Where our everyday services live: email servers, file storage, internal websites—the digital backbone of daily work</td>
                         </tr>
                         <tr>
-                            <td><strong>Management</strong></td>
-                            <td>OOB (Out-of-Band) management zone: OOB FW, Jump Servers (bastion), Infosec Servers, SIEM; includes backup networks and admin-only access paths</td>
+                            <td>🎛️ <strong>The Control Center</strong></td>
+                            <td>Where IT staff work their magic—managing systems, monitoring security, with private access that regular users never see</td>
                         </tr>
                         <tr>
-                            <td><strong>User</strong></td>
-                            <td>User access segment(s) for Staff/Students/IT; access mediated via ZTNA/SASE; local campus LAN/Wi‑Fi aggregation</td>
+                            <td>👥 <strong>The Community Space</strong></td>
+                            <td>Where students, staff, and faculty connect to the network—from dorms, offices, or coffee shops on campus Wi-Fi</td>
                         </tr>
                         <tr>
-                            <td><strong>Research</strong></td>
-                            <td>Isolated R&D workloads (AI/HPC, Web/App servers, Repos); tightly controlled access and Internet egress</td>
+                            <td>🔬 <strong>The Research Lab</strong></td>
+                            <td>Our crown jewel—high-powered computers running AI experiments, secure servers with sensitive data, heavily guarded and isolated</td>
                         </tr>
                         <tr>
-                            <td><strong>Other</strong></td>
-                            <td>Suppliers/third-party connectivity; Physical Security zone; DR Zone mirroring critical R&D services</td>
+                            <td>🤝 <strong>The Collaboration Wing</strong></td>
+                            <td>Secure connections to trusted partners, physical security cameras, and our disaster recovery site—all with specialized protection</td>
                         </tr>
                     </tbody>
                 </table>
+                <div class="callout info">
+                    <p><strong>The Key Principle:</strong> Moving between neighborhoods requires permission. No one can just wander from the Community Space into the Research Lab—every door has a guard checking credentials.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Slide 6: Topology Diagram -->
+        <!-- Slide 6: The Map of Our Digital City -->
         <section class="slide" id="slide-6">
             <div class="slide-content">
-                <h1>Network Topology Diagram</h1>
+                <h1>The Map of Our Digital City</h1>
                 <div class="diagram-container">
                     <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" class="topology-diagram">
                         <!-- Background -->
@@ -203,76 +223,77 @@
                         
                         <!-- Internet -->
                         <rect x="50" y="50" width="200" height="80" rx="5" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
-                        <text x="150" y="90" text-anchor="middle" font-size="16" font-weight="bold">Internet</text>
+                        <text x="150" y="85" text-anchor="middle" font-size="16" font-weight="bold">🌐 Internet</text>
+                        <text x="150" y="105" text-anchor="middle" font-size="11">The Outside World</text>
                         
                         <!-- Edge Zone (External FW + SWG) -->
                         <rect x="300" y="50" width="250" height="120" rx="5" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
-                        <text x="425" y="75" text-anchor="middle" font-size="14" font-weight="bold">Edge Zone</text>
-                        <text x="425" y="95" text-anchor="middle" font-size="12">External FW</text>
-                        <text x="425" y="110" text-anchor="middle" font-size="12">SWG</text>
-                        <text x="425" y="125" text-anchor="middle" font-size="12">DDoS Protection</text>
-                        <text x="425" y="140" text-anchor="middle" font-size="12">WAF</text>
-                        <text x="425" y="155" text-anchor="middle" font-size="12">ZTNA/SASE</text>
+                        <text x="425" y="75" text-anchor="middle" font-size="14" font-weight="bold">🚪 The Gateway</text>
+                        <text x="425" y="95" text-anchor="middle" font-size="11">Security Checkpoints</text>
+                        <text x="425" y="110" text-anchor="middle" font-size="11">Web Filters</text>
+                        <text x="425" y="125" text-anchor="middle" font-size="11">Attack Protection</text>
+                        <text x="425" y="140" text-anchor="middle" font-size="11">Remote Access Portal</text>
+                        <text x="425" y="155" text-anchor="middle" font-size="11">Threat Detection</text>
                         
                         <!-- Users Zone -->
                         <rect x="600" y="50" width="180" height="100" rx="5" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
-                        <text x="690" y="75" text-anchor="middle" font-size="14" font-weight="bold">Users Zone</text>
-                        <text x="690" y="95" text-anchor="middle" font-size="12">Staff</text>
-                        <text x="690" y="110" text-anchor="middle" font-size="12">Students</text>
-                        <text x="690" y="125" text-anchor="middle" font-size="12">IT</text>
-                        <text x="690" y="140" text-anchor="middle" font-size="12">Campus LAN/Wi‑Fi</text>
+                        <text x="690" y="75" text-anchor="middle" font-size="14" font-weight="bold">👥 Community</text>
+                        <text x="690" y="95" text-anchor="middle" font-size="11">Faculty & Staff</text>
+                        <text x="690" y="110" text-anchor="middle" font-size="11">Students</text>
+                        <text x="690" y="125" text-anchor="middle" font-size="11">IT Team</text>
+                        <text x="690" y="140" text-anchor="middle" font-size="11">Campus Network</text>
                         
                         <!-- Internal Services Zone -->
                         <rect x="820" y="50" width="250" height="120" rx="5" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
-                        <text x="945" y="75" text-anchor="middle" font-size="14" font-weight="bold">Internal Services</text>
-                        <text x="945" y="95" text-anchor="middle" font-size="12">Domain Servers</text>
-                        <text x="945" y="110" text-anchor="middle" font-size="12">Internal Web</text>
-                        <text x="945" y="125" text-anchor="middle" font-size="12">App Servers</text>
-                        <text x="945" y="140" text-anchor="middle" font-size="12">Load Balancers</text>
-                        <text x="945" y="155" text-anchor="middle" font-size="12">DC FW Users</text>
+                        <text x="945" y="75" text-anchor="middle" font-size="14" font-weight="bold">🏢 The Campus</text>
+                        <text x="945" y="95" text-anchor="middle" font-size="11">Email & Documents</text>
+                        <text x="945" y="110" text-anchor="middle" font-size="11">Internal Websites</text>
+                        <text x="945" y="125" text-anchor="middle" font-size="11">Business Apps</text>
+                        <text x="945" y="140" text-anchor="middle" font-size="11">File Storage</text>
+                        <text x="945" y="155" text-anchor="middle" font-size="11">Security Guards</text>
                         
                         <!-- Research Zone -->
                         <rect x="300" y="200" width="250" height="140" rx="5" fill="#fff8e1" stroke="#fbc02d" stroke-width="2"/>
-                        <text x="425" y="225" text-anchor="middle" font-size="14" font-weight="bold">Research Zone</text>
-                        <text x="425" y="245" text-anchor="middle" font-size="12">AI/HPC Servers</text>
-                        <text x="425" y="260" text-anchor="middle" font-size="12">R&D Web Servers</text>
-                        <text x="425" y="275" text-anchor="middle" font-size="12">Repos</text>
-                        <text x="425" y="290" text-anchor="middle" font-size="12">Research FW</text>
-                        <text x="425" y="305" text-anchor="middle" font-size="12">DC FW Research</text>
-                        <text x="425" y="320" text-anchor="middle" font-size="12">Research User FW</text>
+                        <text x="425" y="225" text-anchor="middle" font-size="14" font-weight="bold">🔬 Research Lab</text>
+                        <text x="425" y="245" text-anchor="middle" font-size="11">AI Supercomputers</text>
+                        <text x="425" y="260" text-anchor="middle" font-size="11">Research Databases</text>
+                        <text x="425" y="275" text-anchor="middle" font-size="11">Code Repositories</text>
+                        <text x="425" y="290" text-anchor="middle" font-size="11">Multiple Security</text>
+                        <text x="425" y="305" text-anchor="middle" font-size="11">Checkpoints</text>
+                        <text x="425" y="320" text-anchor="middle" font-size="11">(Highly Protected)</text>
                         
                         <!-- OOB Management Zone -->
                         <rect x="600" y="200" width="220" height="140" rx="5" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
-                        <text x="710" y="225" text-anchor="middle" font-size="14" font-weight="bold">OOB Management</text>
-                        <text x="710" y="245" text-anchor="middle" font-size="12">OOB FW</text>
-                        <text x="710" y="260" text-anchor="middle" font-size="12">Jump Servers</text>
-                        <text x="710" y="275" text-anchor="middle" font-size="12">Bastion</text>
-                        <text x="710" y="290" text-anchor="middle" font-size="12">SIEM</text>
-                        <text x="710" y="305" text-anchor="middle" font-size="12">Infosec Servers</text>
-                        <text x="710" y="320" text-anchor="middle" font-size="12">Backup Networks</text>
+                        <text x="710" y="225" text-anchor="middle" font-size="14" font-weight="bold">🎛️ Control Center</text>
+                        <text x="710" y="245" text-anchor="middle" font-size="11">IT Management</text>
+                        <text x="710" y="260" text-anchor="middle" font-size="11">Secure Jump Points</text>
+                        <text x="710" y="275" text-anchor="middle" font-size="11">Command Center</text>
+                        <text x="710" y="290" text-anchor="middle" font-size="11">24/7 Monitoring</text>
+                        <text x="710" y="305" text-anchor="middle" font-size="11">Security Operations</text>
+                        <text x="710" y="320" text-anchor="middle" font-size="11">Backup Systems</text>
                         
                         <!-- Physical Security Zone -->
                         <rect x="860" y="200" width="180" height="100" rx="5" fill="#e0f2f1" stroke="#00695c" stroke-width="2"/>
-                        <text x="950" y="225" text-anchor="middle" font-size="14" font-weight="bold">Physical Security</text>
-                        <text x="950" y="245" text-anchor="middle" font-size="12">CCTV</text>
-                        <text x="950" y="260" text-anchor="middle" font-size="12">Access Control</text>
-                        <text x="950" y="275" text-anchor="middle" font-size="12">Isolated Network</text>
-                        <text x="950" y="290" text-anchor="middle" font-size="12">No Internet</text>
+                        <text x="950" y="225" text-anchor="middle" font-size="14" font-weight="bold">📹 Physical Security</text>
+                        <text x="950" y="245" text-anchor="middle" font-size="11">Camera Systems</text>
+                        <text x="950" y="260" text-anchor="middle" font-size="11">Door Locks</text>
+                        <text x="950" y="275" text-anchor="middle" font-size="11">Isolated Network</text>
+                        <text x="950" y="290" text-anchor="middle" font-size="11">(No Internet)</text>
                         
                         <!-- Suppliers Zone -->
                         <rect x="50" y="380" width="200" height="80" rx="5" fill="#eceff1" stroke="#546e7a" stroke-width="2"/>
-                        <text x="150" y="410" text-anchor="middle" font-size="14" font-weight="bold">Suppliers</text>
-                        <text x="150" y="430" text-anchor="middle" font-size="12">EU/USA Partners</text>
-                        <text x="150" y="445" text-anchor="middle" font-size="12">Suppliers FW</text>
+                        <text x="150" y="410" text-anchor="middle" font-size="14" font-weight="bold">🤝 Partners</text>
+                        <text x="150" y="430" text-anchor="middle" font-size="11">Israel & USA</text>
+                        <text x="150" y="445" text-anchor="middle" font-size="11">Controlled Access</text>
                         
                         <!-- DR Zone -->
                         <rect x="300" y="380" width="250" height="120" rx="5" fill="#fce4ec" stroke="#880e4f" stroke-width="2" stroke-dasharray="5,5"/>
-                        <text x="425" y="405" text-anchor="middle" font-size="14" font-weight="bold">DR Zone</text>
-                        <text x="425" y="425" text-anchor="middle" font-size="12">Mirrored R&D Services</text>
-                        <text x="425" y="440" text-anchor="middle" font-size="12">DR External FW</text>
-                        <text x="425" y="455" text-anchor="middle" font-size="12">Replication Network</text>
-                        <text x="425" y="470" text-anchor="middle" font-size="12">Failover Capability</text>
-                        <text x="425" y="485" text-anchor="middle" font-size="12">Backup Storage</text>
+                        <text x="425" y="405" text-anchor="middle" font-size="14" font-weight="bold">🔄 Emergency Backup</text>
+                        <text x="425" y="425" text-anchor="middle" font-size="11">Mirror of Research</text>
+                        <text x="425" y="440" text-anchor="middle" font-size="11">Separate Location</text>
+                        <text x="425" y="455" text-anchor="middle" font-size="11">Continuous Sync</text>
+                        <text x="425" y="470" text-anchor="middle" font-size="11">Instant Failover</text>
+                        <text x="425" y="485" text-anchor="middle" font-size="11">Disaster Recovery</text>
                         
                         <!-- Connections: Internet to Edge -->
                         <line x1="250" y1="90" x2="300" y2="90" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
@@ -294,7 +315,7 @@
                         
                         <!-- Users to Research (controlled) -->
                         <line x1="690" y1="150" x2="425" y2="200" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
-                        <text x="550" y="165" font-size="10" fill="#666">Controlled</text>
+                        <text x="550" y="165" font-size="10" fill="#666">With Permission</text>
                         
                         <!-- OOB to Internal -->
                         <line x1="820" y1="270" x2="820" y2="170" stroke="#c62828" stroke-width="2" stroke-dasharray="2,2"/>
@@ -304,11 +325,11 @@
                         
                         <!-- Suppliers to Edge -->
                         <line x1="250" y1="420" x2="300" y2="420" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-                        <text x="275" y="415" font-size="10" fill="#666">Suppliers FW</text>
+                        <text x="275" y="415" font-size="10" fill="#666">Verified Only</text>
                         
                         <!-- Research to DR (replication) -->
                         <line x1="425" y1="340" x2="425" y2="380" stroke="#880e4f" stroke-width="2" stroke-dasharray="3,3"/>
-                        <text x="435" y="360" font-size="10" fill="#880e4f">Replication</text>
+                        <text x="435" y="360" font-size="10" fill="#880e4f">Auto-Backup</text>
                         
                         <!-- Arrow marker definition -->
                         <defs>
@@ -319,214 +340,245 @@
                         
                         <!-- Legend -->
                         <rect x="600" y="380" width="250" height="120" rx="5" fill="white" stroke="#666" stroke-width="1" opacity="0.95"/>
-                        <text x="725" y="400" text-anchor="middle" font-size="12" font-weight="bold">Legend</text>
+                        <text x="725" y="400" text-anchor="middle" font-size="12" font-weight="bold">How to Read This Map</text>
                         <line x1="610" y1="410" x2="640" y2="410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-                        <text x="650" y="415" font-size="10">Data Flow</text>
+                        <text x="650" y="415" font-size="10">Normal Traffic</text>
                         <line x1="610" y1="430" x2="640" y2="430" stroke="#c62828" stroke-width="2" stroke-dasharray="2,2"/>
-                        <text x="650" y="435" font-size="10">Management</text>
+                        <text x="650" y="435" font-size="10">IT Management</text>
                         <line x1="610" y1="450" x2="640" y2="450" stroke="#880e4f" stroke-width="2" stroke-dasharray="3,3"/>
-                        <text x="650" y="455" font-size="10">Replication</text>
+                        <text x="650" y="455" font-size="10">Auto-Backup</text>
                         <line x1="610" y1="470" x2="640" y2="470" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
-                        <text x="650" y="475" font-size="10">Controlled Access</text>
+                        <text x="650" y="475" font-size="10">Special Permission</text>
                         <rect x="610" y="485" width="30" height="10" stroke="#880e4f" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
-                        <text x="650" y="493" font-size="10">DR Zone</text>
+                        <text x="650" y="493" font-size="10">Backup Site</text>
                     </svg>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 7: Security Controls -->
+        <!-- Slide 7: How We Keep You Safe -->
         <section class="slide" id="slide-7">
             <div class="slide-content">
-                <h1>Security Controls</h1>
+                <h1>How We Keep You Safe</h1>
                 <div class="two-column">
                     <div class="column">
-                        <h2>Endpoint Protection</h2>
+                        <h2>🛡️ Your Personal Protection</h2>
                         <ul>
-                            <li><strong>EDR:</strong> Advanced threat detection and response</li>
-                            <li><strong>DLP:</strong> Data Loss Prevention on all endpoints</li>
-                            <li><strong>Full-Disk Encryption:</strong> Mandatory on all managed devices</li>
-                            <li><strong>MDR:</strong> 24/7 managed detection and response</li>
+                            <li><strong>Smart Antivirus:</strong> Software that learns what's normal and spots suspicious behavior instantly</li>
+                            <li><strong>Data Leak Prevention:</strong> Stops sensitive files from accidentally leaving your computer</li>
+                            <li><strong>Encrypted Hard Drives:</strong> Even if your laptop is stolen, the data is scrambled and useless</li>
+                            <li><strong>24/7 Security Team:</strong> Real humans watching for threats around the clock</li>
                         </ul>
-                        <h2>Network Security</h2>
+                        
+                        <h2>🔐 Smart Access Control</h2>
                         <ul>
-                            <li><strong>Firewalls:</strong> North-south and east-west enforcement</li>
-                            <li><strong>IDS/IPS:</strong> NGFW IPS on edge and high-risk boundaries</li>
-                            <li><strong>WAF:</strong> Provided by SWG for outbound; consider dedicated for inbound</li>
-                            <li><strong>DDoS:</strong> ISP/cloud-based protection and rate-limiting</li>
-                        </ul>
-                        <h2>Physical Security</h2>
-                        <ul>
-                            <li><strong>Isolated Network:</strong> Physical Security zone fully isolated from Internet</li>
-                            <li><strong>OOB Access:</strong> Connected only to OOB management network</li>
-                            <li><strong>CCTV & Access Control:</strong> Integrated monitoring systems</li>
+                            <li><strong>One Login Everywhere:</strong> Use your campus ID to access everything—no more password jungle</li>
+                            <li><strong>Two-Factor Security:</strong> Like needing both a key and a fingerprint to enter</li>
+                            <li><strong>Role-Based Access:</strong> Students, faculty, and IT each see only what they need</li>
+                            <li><strong>Secure IT Access:</strong> Admin tools are locked behind special jump servers with extra verification</li>
                         </ul>
                     </div>
                     <div class="column">
-                        <h2>Access Control</h2>
+                        <h2>🌐 Network Defenses</h2>
                         <ul>
-                            <li><strong>Central IdP:</strong> MFA/SSO integrated with ZTNA/SASE</li>
-                            <li><strong>Role-Based Access:</strong> By population (Staff/Students/IT/Research) with least privilege</li>
-                            <li><strong>Zero Trust:</strong> No direct inbound access to internal zones</li>
-                            <li><strong>OOB Jump Servers:</strong> Bastion hosts with MFA requirement</li>
-                            <li><strong>Device Authentication:</strong> TACACS+/RADIUS for network devices</li>
+                            <li><strong>Digital Firewalls:</strong> Like security guards checking IDs at every door between neighborhoods</li>
+                            <li><strong>Threat Detection:</strong> Systems that spot attacks in real-time and block them automatically</li>
+                            <li><strong>Web Protection:</strong> Filters that stop you from accidentally visiting dangerous websites</li>
+                            <li><strong>Attack Protection:</strong> Defense against massive traffic floods trying to overwhelm us</li>
                         </ul>
-                        <h2>Encryption</h2>
+                        
+                        <h2>🔒 Keeping Secrets Secret</h2>
                         <ul>
-                            <li><strong>In-Transit:</strong> TLS for all application traffic; encrypted admin protocols</li>
-                            <li><strong>At-Rest:</strong> Full-disk encryption on endpoints; backup encryption</li>
-                            <li><strong>TLS Inspection:</strong> Partial (SWG for high-risk categories; bypass for privacy-sensitive destinations)</li>
-                            <li><strong>ZTNA Tunnels:</strong> Encrypted from endpoints to SASE</li>
+                            <li><strong>Encrypted Connections:</strong> All data traveling over the network is scrambled—like speaking in code</li>
+                            <li><strong>Secure Tunnels:</strong> When working from home, your connection is private and protected</li>
+                            <li><strong>Smart Inspection:</strong> We check web traffic for threats, but respect privacy for sensitive sites (banking, healthcare)</li>
+                            <li><strong>Backup Encryption:</strong> All backup copies are encrypted—thieves can't read stolen backups</li>
+                        </ul>
+                        
+                        <h2>📹 Physical Security</h2>
+                        <ul>
+                            <li><strong>Isolated Camera Network:</strong> Security cameras run on a completely separate network that hackers can't reach from the Internet</li>
+                            <li><strong>Smart Door Locks:</strong> Access logs show who entered where and when</li>
+                            <li><strong>Integrated Alerts:</strong> Physical security events trigger notifications to our security team</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 8: High Availability & Resiliency -->
+        <!-- Slide 8: Always On, Always Ready -->
         <section class="slide" id="slide-8">
             <div class="slide-content">
-                <h1>High Availability & Resiliency</h1>
+                <h1>Always On, Always Ready</h1>
+                <p class="intro-text">What happens when things go wrong? We're prepared.</p>
                 <table class="ha-table">
                     <thead>
                         <tr>
-                            <th>Component</th>
-                            <th>HA Design</th>
+                            <th>System</th>
+                            <th>How We Keep It Running</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Firewalls</strong></td>
-                            <td>HA pairs (Active/Standby or Active/Active) per edge: Users FW, DC FW Users, DC FW Research, Research User FW, OOB FW, Suppliers FW; sync policies/state where supported</td>
+                            <td>🔥 <strong>Security Checkpoints</strong></td>
+                            <td>Every gateway has a backup twin. If one fails, the other takes over in seconds—you won't even notice</td>
                         </tr>
                         <tr>
-                            <td><strong>Core/Edge Routers</strong></td>
-                            <td>Redundant edge routers/switches; dual uplinks from key zones to core; dynamic routing where appropriate</td>
+                            <td>🔌 <strong>Network Routers</strong></td>
+                            <td>Multiple paths for data to travel. Like having backup roads when one has traffic</td>
                         </tr>
                         <tr>
-                            <td><strong>Load Balancers</strong></td>
-                            <td>If required for web/app tiers, deploy redundant load balancers in R&D/Internal zones</td>
+                            <td>⚖️ <strong>Load Distribution</strong></td>
+                            <td>Heavy workloads are spread across multiple servers, so no single point gets overloaded</td>
                         </tr>
                         <tr>
-                            <td><strong>Internet/WAN Links</strong></td>
-                            <td>Dual ISP or diverse paths for Internet egress; separate paths for supplier connectivity if mission-critical</td>
+                            <td>🌐 <strong>Internet Connections</strong></td>
+                            <td>Two separate Internet providers. If one goes down, traffic automatically routes through the other</td>
                         </tr>
                         <tr>
-                            <td><strong>Cloud Connectivity</strong></td>
-                            <td>Redundant tunnels/links to ZTNA/SASE and IdP; monitor SLA and failover behavior</td>
+                            <td>☁️ <strong>Cloud Services</strong></td>
+                            <td>Multiple connections to our remote access and security services—always a backup path available</td>
                         </tr>
                         <tr>
-                            <td><strong>DR Zone</strong></td>
-                            <td>Mirrored Research services; automated replication and failover capability; tested recovery procedures</td>
+                            <td>🔄 <strong>Emergency Backup Site</strong></td>
+                            <td>A complete mirror of our research systems in a different location. If disaster strikes campus, we switch over and keep working</td>
                         </tr>
                     </tbody>
                 </table>
+                <div class="callout success">
+                    <p><strong>The Goal:</strong> You should never think about the network. It should just work—like electricity or running water. That's how we'll know we've succeeded.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Slide 9: Monitoring & Logging -->
+        <!-- Slide 9: Watching & Learning -->
         <section class="slide" id="slide-9">
             <div class="slide-content">
-                <h1>Monitoring & Logging</h1>
+                <h1>Watching & Learning</h1>
+                <p class="intro-text">How we spot problems before they become disasters:</p>
                 <div class="two-column">
                     <div class="column">
-                        <h2>Monitoring</h2>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>SIEM (central)</li>
-                            <li>Firewall/SWG management consoles</li>
-                            <li>NMS (Zabbix/Prometheus)</li>
-                            <li>Endpoint telemetry</li>
-                        </ul>
-                        <h3>Key Metrics</h3>
-                        <ul>
-                            <li>FW/SWG health & throughput</li>
-                            <li>ZTNA connector health</li>
-                            <li>Auth success/fail rates</li>
-                            <li>DNS/HTTP(S) allow/deny</li>
-                            <li>Server uptime</li>
-                            <li>Research service latency</li>
-                            <li>DR replication status</li>
-                            <li>Backup job success</li>
-                        </ul>
-                        <h3>Alerting</h3>
-                        <ul>
-                            <li>Critical path device down</li>
-                            <li>Sustained packet loss</li>
-                            <li>Auth outages</li>
-                            <li>Abnormal deny spikes</li>
-                            <li>Escalate to on-call/SOC</li>
-                        </ul>
+                        <h2>👀 What We Watch</h2>
+                        <div class="monitoring-card">
+                            <h3>System Health</h3>
+                            <ul>
+                                <li>Are all security checkpoints working?</li>
+                                <li>Is the network fast enough?</li>
+                                <li>Are servers responding?</li>
+                                <li>Is storage filling up?</li>
+                            </ul>
+                        </div>
+                        <div class="monitoring-card">
+                            <h3>Security Events</h3>
+                            <ul>
+                                <li>Failed login attempts (is someone trying to break in?)</li>
+                                <li>Unusual access patterns (why is someone logging in at 3 AM?)</li>
+                                <li>Blocked threats (what attacks were stopped?)</li>
+                                <li>Strange network traffic (is something spreading?)</li>
+                            </ul>
+                        </div>
+                        <div class="monitoring-card">
+                            <h3>Business Operations</h3>
+                            <ul>
+                                <li>Are backups completing successfully?</li>
+                                <li>Is the disaster recovery site staying in sync?</li>
+                                <li>Are research systems performing well?</li>
+                                <li>Are remote workers connecting smoothly?</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="column">
-                        <h2>Logging</h2>
-                        <h3>Log Sources</h3>
+                        <h2>📊 Our Monitoring Dashboard</h2>
                         <ul>
-                            <li>All firewalls</li>
-                            <li>Secure Web Gateway(s)</li>
-                            <li>Authentication/IdP events</li>
-                            <li>Jump server sessions</li>
-                            <li>Critical servers (Domain, Repos, AI, App, Web)</li>
-                            <li>DR edge</li>
+                            <li><strong>Central Security Hub:</strong> One screen showing the health of everything</li>
+                            <li><strong>Smart Alerts:</strong> We only get notified about things that matter—no alert fatigue</li>
+                            <li><strong>Automated Responses:</strong> Many threats are blocked automatically before humans even see them</li>
+                            <li><strong>Historical Tracking:</strong> We can look back and see patterns over time</li>
                         </ul>
-                        <h3>Retention Period</h3>
-                        <div class="callout info">
-                            <strong>90 days hot / 1 year archive</strong>
-                            <p>(Adjust to compliance and storage)</p>
-                        </div>
-                        <h3>SIEM Integration</h3>
+                        
+                        <h2>📝 What We Record</h2>
+                        <h3>Everything Important Gets Logged:</h3>
                         <ul>
-                            <li>Syslog/API ingestion into SIEM in OOB zone</li>
-                            <li>Normalize, correlate, and alert</li>
-                            <li>Flow logs (NetFlow/IPFIX/sFlow) optional</li>
+                            <li>All security checkpoint decisions</li>
+                            <li>Web filtering actions</li>
+                            <li>Login successes and failures</li>
+                            <li>Admin access to sensitive systems</li>
+                            <li>Changes to critical configurations</li>
+                        </ul>
+                        
+                        <div class="callout info">
+                            <h3>How Long We Keep Records</h3>
+                            <p><strong>90 days readily available</strong> for quick investigation</p>
+                            <p><strong>1 year archived</strong> for compliance and historical analysis</p>
+                            <p>(We can adjust based on regulations)</p>
+                        </div>
+                        
+                        <h3>The Intelligence Center</h3>
+                        <p>All logs flow into our Security Operations Center, where:</p>
+                        <ul>
+                            <li>Computers correlate events across systems</li>
+                            <li>AI spots patterns humans might miss</li>
+                            <li>Security analysts investigate suspicious activity</li>
+                            <li>Automated playbooks respond to known threats</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 10: Risks, Open Questions & Summary -->
+        <!-- Slide 10: The Path Forward -->
         <section class="slide" id="slide-10">
             <div class="slide-content">
-                <h1>Risks, Open Questions & Summary</h1>
+                <h1>The Path Forward</h1>
                 <div class="two-column">
                     <div class="column">
-                        <h2>Key Risks & Mitigations</h2>
+                        <h2>🎯 What We've Accomplished</h2>
+                        <div class="summary-point">
+                            <h3>Built a Digital Fortress</h3>
+                            <p>Multiple layers of defense protecting our research while keeping work flowing smoothly</p>
+                        </div>
+                        <div class="summary-point">
+                            <h3>Designed for Real Threats</h3>
+                            <p>Defenses specifically built to stop nation-states, insider threats, AI-powered attacks, and ransomware</p>
+                        </div>
+                        <div class="summary-point">
+                            <h3>Always Available</h3>
+                            <p>Backup systems and disaster recovery ensure we keep working even when things go wrong</p>
+                        </div>
+                        <div class="summary-point">
+                            <h3>24/7 Watchful Eyes</h3>
+                            <p>Constant monitoring and smart alerts catch problems before they become crises</p>
+                        </div>
+                        
+                        <h2>⚠️ Challenges to Solve</h2>
                         <ul>
-                            <li><strong>Supply-chain compromise:</strong> Supplier segmentation, explicit allow-lists, continuous monitoring</li>
-                            <li><strong>Insider threat:</strong> ZTNA-based access, role separation, SIEM correlation</li>
-                            <li><strong>Zero-day exploits:</strong> Isolated research zones, controlled Internet access, sandboxing</li>
-                            <li><strong>Ransomware:</strong> Email/web security, EDR containment, east-west segmentation, immutable backups</li>
-                            <li><strong>Physical intrusion:</strong> Encrypted endpoints, strong access controls, CCTV monitoring</li>
-                        </ul>
-                        <h2>Open Questions</h2>
-                        <ul>
-                            <li>Firewalls/SWG platforms support required policy granularity, logging, and HA?</li>
-                            <li>TLS inspection eligibility due to privacy/compliance constraints</li>
-                            <li>Supplier connectivity and data residency requirements</li>
-                            <li>ZTNA/SASE and IdP services SLA confirmation</li>
+                            <li><strong>Choosing the Right Tools:</strong> Which security products best fit our needs and budget?</li>
+                            <li><strong>Privacy vs. Security:</strong> Where do we draw the line on monitoring encrypted traffic?</li>
+                            <li><strong>Partner Connections:</strong> How do we securely collaborate with institutions in different countries?</li>
+                            <li><strong>Service Guarantees:</strong> What uptime promises can our vendors actually keep?</li>
                         </ul>
                     </div>
                     <div class="column">
-                        <h2>Summary</h2>
-                        <div class="summary-point">
-                            <h3>Architecture Approach</h3>
-                            <p>Segmented zones with Zero Trust access (ZTNA/SASE) and defense-in-depth security controls</p>
-                        </div>
-                        <div class="summary-point">
-                            <h3>Key Zones</h3>
-                            <p>Users, Internal Services, Research, OOB Management, Physical Security, Suppliers, DR</p>
-                        </div>
-                        <div class="summary-point">
-                            <h3>Security Posture</h3>
-                            <p>Multi-layered controls: EDR/DLP, firewalls, IDS/IPS, WAF, DDoS protection, SIEM, full encryption</p>
-                        </div>
-                        <div class="summary-point">
-                            <h3>Availability</h3>
-                            <p>HA pairs for critical components, dual ISP connectivity, DR mirroring, 99.9-99.99% uptime targets</p>
-                        </div>
+                        <h2>🚀 Next Steps on Our Journey</h2>
+                        <ol class="next-steps">
+                            <li><strong>Select Our Partners:</strong> Choose the security vendors who will help us build this</li>
+                            <li><strong>Create the Blueprints:</strong> Detailed technical plans with specific IP addresses and configurations</li>
+                            <li><strong>Write the Rule Book:</strong> Define exactly who can access what and when</li>
+                            <li><strong>Build a Test Lab:</strong> Try everything in a safe environment before going live</li>
+                            <li><strong>Train Our Teams:</strong> Make sure everyone knows how to use the new systems</li>
+                            <li><strong>Deploy in Phases:</strong> Roll out gradually, fixing issues as we go</li>
+                            <li><strong>Continuous Improvement:</strong> Keep learning and adapting as new threats emerge</li>
+                        </ol>
+                        
                         <div class="closing-statement">
-                            <p><strong>This architecture provides a robust, scalable foundation for secure academic research operations while enabling controlled collaboration and protecting critical intellectual property.</strong></p>
+                            <h3>🎓 The Bottom Line</h3>
+                            <p><strong>Our researchers should focus on changing the world, not worrying about hackers.</strong></p>
+                            <p>This architecture creates a safe space where innovation thrives, collaboration flows naturally, and sensitive work stays protected.</p>
+                            <p><em>We're not just building a network—we're securing the future of research.</em></p>
+                        </div>
+                        
+                        <div class="callout success">
+                            <p><strong>Questions? Let's discuss:</strong> What concerns you most? What would you change? How can we make this even better?</p>
                         </div>
                     </div>
                 </div>

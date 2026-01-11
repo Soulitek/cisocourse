@@ -545,7 +545,7 @@ table tbody tr:last-child td {
 }
 
 /* ========================================
-   Highlight
+   Highlight & Story Elements
    ======================================== */
 .highlight {
     background: #fff9c4;
@@ -554,6 +554,77 @@ table tbody tr:last-child td {
     border-radius: 4px;
     margin: 1rem 0;
     font-weight: 500;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.story-intro {
+    margin: 1.5rem 0;
+}
+
+.story-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.benefit-card,
+.pillar-card,
+.monitoring-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3,
+.pillar-card h3,
+.monitoring-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.benefit-card p,
+.pillar-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.monitoring-card ul {
+    margin: 0.5rem 0 0 1rem;
+}
+
+.monitoring-card li {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.next-steps {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.next-steps li {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 /* ========================================
