@@ -17,6 +17,7 @@
     const totalSlidesSpan = document.getElementById('total-slides');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
+    const exportBtn = document.getElementById('export-btn');
 
     // Initialize
     function init() {
@@ -55,6 +56,11 @@
 
         if (nextBtn) {
             nextBtn.addEventListener('click', () => navigate(1));
+        }
+
+        // Export button
+        if (exportBtn) {
+            exportBtn.addEventListener('click', handleExport);
         }
 
         // Handle browser back/forward buttons
@@ -225,6 +231,105 @@
         });
     }
 
+    // Export functionality
+    function handleExport() {
+        // Show export options modal
+        const modal = createExportModal();
+        document.body.appendChild(modal);
+    }
+
+    function createExportModal() {
+        const modal = document.createElement('div');
+        modal.className = 'export-modal';
+        modal.innerHTML = `
+            <div class="export-modal-content">
+                <h2>📄 Export Presentation</h2>
+                <p>Choose your export method:</p>
+                <div class="export-options">
+                    <button class="export-option-btn" onclick="window.deckNavigation.exportToPDF()">
+                        🖨️ Export to PDF
+                        <small>Opens browser print dialog</small>
+                    </button>
+                    <button class="export-option-btn" onclick="window.deckNavigation.exportAllSlides()">
+                        📑 Export All Slides
+                        <small>Print all slides at once</small>
+                    </button>
+                    <button class="export-option-btn" onclick="window.deckNavigation.exportCurrentSlide()">
+                        📄 Export Current Slide Only
+                        <small>Print just this slide</small>
+                    </button>
+                </div>
+                <button class="close-modal-btn" onclick="this.closest('.export-modal').remove()">Close</button>
+            </div>
+        `;
+        return modal;
+    }
+
+    function exportToPDF() {
+        // Close modal
+        const modal = document.querySelector('.export-modal');
+        if (modal) modal.remove();
+        
+        // Trigger print dialog
+        window.print();
+    }
+
+    function exportAllSlides() {
+        // Close modal
+        const modal = document.querySelector('.export-modal');
+        if (modal) modal.remove();
+        
+        // Show all slides for printing
+        slides.forEach(slide => {
+            slide.classList.add('active');
+        });
+        
+        // Hide navigation and progress
+        document.querySelector('.progress-bar').style.display = 'none';
+        document.querySelector('.slide-counter').style.display = 'none';
+        document.querySelector('.nav-controls').style.display = 'none';
+        
+        // Wait for render then print
+        setTimeout(() => {
+            window.print();
+            
+            // Restore after print
+            window.onafterprint = () => {
+                slides.forEach((slide, index) => {
+                    if (index !== currentSlideIndex) {
+                        slide.classList.remove('active');
+                    }
+                });
+                document.querySelector('.progress-bar').style.display = '';
+                document.querySelector('.slide-counter').style.display = '';
+                document.querySelector('.nav-controls').style.display = '';
+            };
+        }, 100);
+    }
+
+    function exportCurrentSlide() {
+        // Close modal
+        const modal = document.querySelector('.export-modal');
+        if (modal) modal.remove();
+        
+        // Hide navigation and progress temporarily
+        document.querySelector('.progress-bar').style.display = 'none';
+        document.querySelector('.slide-counter').style.display = 'none';
+        document.querySelector('.nav-controls').style.display = 'none';
+        
+        // Print current slide only
+        setTimeout(() => {
+            window.print();
+            
+            // Restore after print
+            window.onafterprint = () => {
+                document.querySelector('.progress-bar').style.display = '';
+                document.querySelector('.slide-counter').style.display = '';
+                document.querySelector('.nav-controls').style.display = '';
+            };
+        }, 100);
+    }
+
     // Initialize on DOM load
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
@@ -232,13 +337,16 @@
         init();
     }
 
-    // Expose navigation functions globally for debugging (optional)
+    // Expose navigation functions globally for debugging and export
     window.deckNavigation = {
         goToSlide: goToSlide,
         next: () => navigate(1),
         prev: () => navigate(-1),
         current: () => currentSlideIndex,
-        total: () => totalSlides
+        total: () => totalSlides,
+        exportToPDF: exportToPDF,
+        exportAllSlides: exportAllSlides,
+        exportCurrentSlide: exportCurrentSlide
     };
 
 })();
