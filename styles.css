@@ -95,11 +95,13 @@ body {
 .slide {
     display: none;
     width: var(--slide-width);
-    height: var(--slide-height);
+    min-height: var(--slide-height);
+    height: auto;
+    max-height: 90vh;
     background: var(--bg-white);
     border-radius: 8px;
     box-shadow: var(--shadow-lg);
-    padding: 3rem;
+    padding: 2rem;
     overflow-y: auto;
     position: relative;
     animation: fadeIn 0.4s ease;
@@ -121,9 +123,9 @@ body {
 }
 
 .slide-content {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 /* ========================================
@@ -131,45 +133,47 @@ body {
    ======================================== */
 h1 {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-bottom: 3px solid var(--primary-color);
     padding-bottom: 0.5rem;
 }
 
 h2 {
     font-family: var(--font-heading);
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--dark-text);
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--dark-text);
     margin-top: 1rem;
     margin-bottom: 0.75rem;
 }
 
+h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
 p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 ul, ol {
     margin-left: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
 }
 
 /* ========================================
@@ -178,8 +182,8 @@ li {
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 0.75rem;
 }
 
 .column {
@@ -224,8 +228,8 @@ li {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1rem 0;
-    font-size: 0.95rem;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
 }
 
 table thead {
@@ -234,16 +238,17 @@ table thead {
 }
 
 table th {
-    padding: 1rem;
+    padding: 0.75rem;
     text-align: left;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 table td {
-    padding: 0.875rem 1rem;
+    padding: 0.65rem 0.75rem;
     border-bottom: 1px solid var(--border-color);
     vertical-align: top;
+    line-height: 1.4;
 }
 
 table tbody tr:hover {
@@ -355,8 +360,8 @@ table tbody tr:last-child td {
 .principles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .principle-card {
@@ -465,12 +470,13 @@ table tbody tr:last-child td {
    ======================================== */
 .diagram-container {
     width: 100%;
-    height: 550px;
+    height: auto;
+    max-height: 500px;
     overflow: auto;
     background: white;
     border: 2px solid var(--border-color);
     border-radius: 8px;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
 .topology-diagram {
@@ -594,9 +600,9 @@ table tbody tr:last-child td {
 }
 
 .intro-text {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: var(--light-text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-style: italic;
 }
 
@@ -604,26 +610,26 @@ table tbody tr:last-child td {
 .pillar-card,
 .monitoring-card {
     background: white;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 6px;
     border-left: 4px solid var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-card h3,
 .pillar-card h3,
 .monitoring-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1rem;
+    margin: 0 0 0.4rem 0;
+    font-size: 0.95rem;
     color: var(--primary-color);
 }
 
 .benefit-card p,
 .pillar-card p {
     margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .monitoring-card ul {
