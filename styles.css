@@ -675,6 +675,35 @@ table tbody tr:last-child td {
     font-size: 0.95rem;
 }
 
+.compact-list {
+    font-size: 0.85rem;
+    margin-left: 1.25rem;
+}
+
+.compact-list li {
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+}
+
+.closing-statement-compact {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.closing-statement-compact p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.closing-statement-compact p:last-child {
+    margin-bottom: 0;
+}
+
 /* ========================================
    Export Modal
    ======================================== */
