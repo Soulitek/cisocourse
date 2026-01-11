@@ -470,6 +470,13 @@ table tbody tr:last-child td {
     pointer-events: none;
 }
 
+.topology-diagram-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 /* ========================================
    Speaker Notes
    ======================================== */
